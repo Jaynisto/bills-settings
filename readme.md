@@ -270,3 +270,8 @@ Route name | Action |Description
 ### Deploy the Heroku
 
 Deploy your application to [Heroku](https://www.heroku.com/nodejs).
+
+
+### Test Badge
+
+[![Node.js CI](https://github.com/Jaynisto/bills-settings/actions/workflows/node.js.yml/badge.svg)](https://github.com/Jaynisto/bills-settings/actions/workflows/node.js.yml)
