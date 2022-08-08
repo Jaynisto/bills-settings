@@ -44,11 +44,11 @@ app.listen(PORT, function(){
 
 Start you ExpressJS server using `node index.js`
 
-Open this link in a web browser: `http://localhost:3007`
+Open this link in a web browser: `http://localhost:3009`
 
 You should see `Bill Settings WebApp` in the server.
 
-If you were to stop the server instance by pressing `Ctrl-C` in the terminal the `http://localhost:3007` URL will not work any more.
+If you were to stop the server instance by pressing `Ctrl-C` in the terminal the `http://localhost:3009` URL will not work any more.
 
 ## Install nodemon
 
@@ -89,7 +89,7 @@ var exphbs  = require('express-handlebars');
 Set it up like this:
 
 ```javascript
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 ```
 
@@ -253,7 +253,7 @@ Use this HTML as a [template](./public/index.html) for your screens.
 
 Create a folder called `settings-bill-expressjs`. Create a GitHub repo with the same name for the project.
 
-If the total cost exceed the warning level show the total cost in orange, if it exceeds the critical level show it in red and prevent any new costs from being added.
+qIf the total cost exceed the warning level show the total cost in orange, if it exceeds the critical level show it in red and prevent any new costs from being added.
 
 > **Note:** use the `res.redirect('/target-route')` route to redirect to a GET route.
 

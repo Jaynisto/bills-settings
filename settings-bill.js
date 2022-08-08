@@ -93,13 +93,13 @@ export default function SettingsBill() {
     }
 
     function totals() {
-        let smsTotal = getTotal('sms')
-        let callTotal = getTotal('call')
+        let smsTotal = getTotal('sms').toFixed(2);
+        let callTotal = getTotal('call').toFixed(2);
         return {
             smsTotal,
             callTotal,
-            grandTotal : grandTotal()
-        }
+            grandTotal : grandTotal().toFixed(2),
+        };
     }
 
     function hasReachedWarningLevel(){

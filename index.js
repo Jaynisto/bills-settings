@@ -45,7 +45,7 @@ app.post('/settings', (req, res)=>{
         warningLevel: req.body.warningLevel,
         criticalLevel: req.body.criticalLevel
     });
-    console.log(req.body);
+    // console.log(req.body);
     res.redirect('/');
 });
 
