@@ -36,6 +36,9 @@ export default function SettingsBill() {
         if (hasReachedCriticalLevel()){
             return
         }
+        if (action !== 'sms' && action !== 'call' ){
+            return
+        }
 
         actionList.push({
             type: action,
